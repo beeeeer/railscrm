@@ -1,0 +1,35 @@
+<h1>Listing crms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Clientname</th>
+      <th>Phonenumber</th>
+      <th>Contactphonenumber</th>
+      <th>Nip</th>
+      <th>Notes</th>
+      <th>Services</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @crms.each do |crm| %>
+      <tr>
+        <td><%= crm.clientName %></td>
+        <td><%= crm.phoneNumber %></td>
+        <td><%= crm.contactPhoneNumber %></td>
+        <td><%= crm.nip %></td>
+        <td><%= crm.notes %></td>
+        <td><%= crm.services %></td>
+        <td><%= link_to 'Show', crm %></td>
+        <td><%= link_to 'Edit', edit_crm_path(crm) %></td>
+        <td><%= link_to 'Destroy', crm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Crm', new_crm_path %>

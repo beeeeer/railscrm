@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Clientname:</strong>
+  <%= @crm.clientName %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @crm.phoneNumber %>
+</p>
+
+<p>
+  <strong>Contactphonenumber:</strong>
+  <%= @crm.contactPhoneNumber %>
+</p>
+
+<p>
+  <strong>Nip:</strong>
+  <%= @crm.nip %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @crm.notes %>
+</p>
+
+<p>
+  <strong>Services:</strong>
+  <%= @crm.services %>
+</p>
+
+<%= link_to 'Edit', edit_crm_path(@crm) %> |
+<%= link_to 'Back', crms_path %>

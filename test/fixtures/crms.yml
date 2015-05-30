@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clientName: MyText
+  phoneNumber: MyString
+  contactPhoneNumber: MyString
+  nip: MyString
+  notes: MyText
+  services: MyText
+
+two:
+  clientName: MyText
+  phoneNumber: MyString
+  contactPhoneNumber: MyString
+  nip: MyString
+  notes: MyText
+  services: MyText
